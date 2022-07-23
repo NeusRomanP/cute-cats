@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.container .container__img{
+    flex-basis: 20%;
+    overflow: hidden;
+    height: 600px;
+    border: 2px solid white;
+    
+}
+
+.container .container__img:hover{
+    flex-grow: 1;
+}
+
+.container:hover .container__img:not(:hover){
+    flex-basis: 50px;
+}
+
+img{
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
